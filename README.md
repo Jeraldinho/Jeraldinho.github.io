@@ -1,2 +1,2 @@
 # projects
-Repositories for my some projects
+Repository for my some projects
