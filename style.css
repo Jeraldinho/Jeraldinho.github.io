@@ -6,16 +6,10 @@
     color: #464646;
 }
 
-<<<<<<< HEAD
 h1 {
     color: inherit;
 }
 
 p {
     color: #ccc;
-=======
-h1,
-p {
-    color: inherit;
->>>>>>> af2d02d7824857d1be0c800d8ff6120ba98f697d
 }
