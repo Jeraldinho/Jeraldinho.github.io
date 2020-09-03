@@ -4,6 +4,7 @@
     align-items: center;
     height: 100%;
     color: #464646;
+    flex-flow: column;
 }
 
 h1 {
