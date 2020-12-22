@@ -314,12 +314,12 @@ body {
 .timer__cntainer {
   max-width: 800px;
   margin: 0 auto;
+  padding-top: 7rem;
 }
 .timer__cntainer .title {
   font-size: 3rem;
   text-align: center;
   color: #000;
-  margin-top: 7rem;
   margin-bottom: 2rem;
   line-height: 1.2;
 }
