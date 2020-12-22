@@ -7,7 +7,7 @@ let oneDay = 1000 * 60 * 60 * 24; // 86 400 000
 
 const daysEl = document.getElementById('days');
 const hoursEl = document.getElementById('hours');
-const minitsEl = document.getElementById('minits');
+const minitesEl = document.getElementById('minits');
 const secondsEl = document.getElementById('seconds');
 
 function timer() {
@@ -16,18 +16,18 @@ function timer() {
 	let dateDiff = newYearDate - currentDate;
 
 	let seconds = Math.floor((dateDiff / 1000) % 60);
-	let minits = Math.floor((dateDiff / 60000) % 60);
+	let minites = Math.floor((dateDiff / 60000) % 60);
 	let hours = Math.floor((dateDiff / 3600000) % 24);
 	let days = Math.floor((dateDiff / 86400000));
 
 	seconds = (seconds < 10) ? `0${seconds}` : seconds;
-	minits = (minits < 10) ? `0${minits}` : minits;
+	minits = (minites < 10) ? `0${minites}` : minites;
 	hours = (hours < 10) ? `0${hours}` : hours;
 	days = (days < 10) ? `0${days}` : days;
 
 	daysEl.innerHTML = days;
 	hoursEl.innerHTML = hours;
-	minitsEl.innerHTML = minits;
+	minitesEl.innerHTML = minites;
 	secondsEl.innerHTML = seconds;
 }
 
