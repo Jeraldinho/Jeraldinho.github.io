@@ -12,7 +12,7 @@ const secondsEl = document.getElementById('seconds');
 
 function timer() {
 	let currentDate = new Date();
-	let newYearDate = new Date(2021, 0, 1, 0, 0, 0, 0)
+	let newYearDate = new Date(2022, 0, 1, 0, 0, 0, 0)
 	let dateDiff = newYearDate - currentDate;
 
 	let seconds = Math.floor((dateDiff / 1000) % 60);
