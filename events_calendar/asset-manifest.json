@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/events_calendar/static/css/main.5060f6d0.chunk.css",
-    "main.js": "/events_calendar/static/js/main.73722735.chunk.js",
-    "main.js.map": "/events_calendar/static/js/main.73722735.chunk.js.map",
-    "runtime-main.js": "/events_calendar/static/js/runtime-main.10e15e9d.js",
-    "runtime-main.js.map": "/events_calendar/static/js/runtime-main.10e15e9d.js.map",
-    "static/css/2.f2a16891.chunk.css": "/events_calendar/static/css/2.f2a16891.chunk.css",
-    "static/js/2.207ea4d4.chunk.js": "/events_calendar/static/js/2.207ea4d4.chunk.js",
-    "static/js/2.207ea4d4.chunk.js.map": "/events_calendar/static/js/2.207ea4d4.chunk.js.map",
-    "index.html": "/events_calendar/index.html",
-    "static/css/2.f2a16891.chunk.css.map": "/events_calendar/static/css/2.f2a16891.chunk.css.map",
-    "static/css/main.5060f6d0.chunk.css.map": "/events_calendar/static/css/main.5060f6d0.chunk.css.map",
-    "static/js/2.207ea4d4.chunk.js.LICENSE.txt": "/events_calendar/static/js/2.207ea4d4.chunk.js.LICENSE.txt",
-    "static/media/materialdesignicons.min.css": "/events_calendar/static/media/materialdesignicons-webfont.c324da17.svg"
+    "main.css": "./static/css/main.df4e725b.chunk.css",
+    "main.js": "./static/js/main.73722735.chunk.js",
+    "main.js.map": "./static/js/main.73722735.chunk.js.map",
+    "runtime-main.js": "./static/js/runtime-main.eafb3d86.js",
+    "runtime-main.js.map": "./static/js/runtime-main.eafb3d86.js.map",
+    "static/css/2.f2a16891.chunk.css": "./static/css/2.f2a16891.chunk.css",
+    "static/js/2.207ea4d4.chunk.js": "./static/js/2.207ea4d4.chunk.js",
+    "static/js/2.207ea4d4.chunk.js.map": "./static/js/2.207ea4d4.chunk.js.map",
+    "index.html": "./index.html",
+    "static/css/2.f2a16891.chunk.css.map": "./static/css/2.f2a16891.chunk.css.map",
+    "static/css/main.df4e725b.chunk.css.map": "./static/css/main.df4e725b.chunk.css.map",
+    "static/js/2.207ea4d4.chunk.js.LICENSE.txt": "./static/js/2.207ea4d4.chunk.js.LICENSE.txt",
+    "static/media/materialdesignicons.min.css": "./static/media/materialdesignicons-webfont.c324da17.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.10e15e9d.js",
+    "static/js/runtime-main.eafb3d86.js",
     "static/css/2.f2a16891.chunk.css",
     "static/js/2.207ea4d4.chunk.js",
-    "static/css/main.5060f6d0.chunk.css",
+    "static/css/main.df4e725b.chunk.css",
     "static/js/main.73722735.chunk.js"
   ]
 }
