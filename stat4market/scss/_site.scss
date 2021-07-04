@@ -1,0 +1,583 @@
+* {
+	font-family: $font1;
+}
+
+html,
+body {
+	font-family: $font1;
+	font-size: 14px;
+	color: $textcolor1;
+	background-color: $maincolor4;
+}
+
+a:hover,
+a:focus {
+	text-decoration: none;
+}
+
+img {
+	max-width: 100%;
+}
+
+.container {
+	@media (min-width: 1200px) {
+		max-width: 1200px;
+	}
+
+	@media (min-width: 1920px) {
+		max-width: 1860px;
+	}
+}
+
+.btn {
+	display: inline-block;
+	background-color: $maincolor1;
+	color: #fff;
+	border-radius: 4px;
+	border: 1px solid $maincolor1;
+	padding: 5px 12px;
+	font-size: 14px;
+	line-height: 1.5;
+	transition: 0.3s ease;
+	text-decoration: none;
+
+	&:hover,
+	&:focus {
+		background-color: darken($maincolor1, 10%);
+	}
+
+	&.btn--outline {
+		background-color: #fff;
+		border: 1px solid #d8dce9;
+		color: $maincolor1;
+
+		&:hover,
+		&:focus {
+			border: 1px solid darken(#d8dce9, 10%);
+			background-color: darken(#d8dce9, 10%);
+			color: #fff;
+		}
+	}
+}
+
+.page-content {
+	padding-bottom: 80px;
+}
+
+/* Content */
+.page-title {
+	font-size: 30px;
+	font-weight: 600;
+	margin-bottom: 24px;
+
+	@media (max-width: 767px) {
+		font-size: 20px;
+		margin-bottom: 16px;
+	}
+}
+
+.dropdown-menu {
+	display: none;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+
+	a {
+		color: $textcolor1;
+		transition: 0.3s ease;
+
+		&:focus,
+		&:hover {
+			color: $maincolor1;
+		}
+	}
+}
+
+/* Account navigation */
+.account-nav {
+	margin-bottom: 24px;
+
+	&__link {
+		font-size: 14px;
+		text-decoration: none;
+		padding: 10px 16px;
+		transition: 0.3s;
+		background-color: transparent;
+		border-color: $maincolor1;
+		color: $maincolor1;
+		line-height: 1.3;
+
+		&:not(:last-child) {
+			margin-right: 15px;
+		}
+
+		&:hover,
+		&:focus {
+			background: $maincolor1;
+			color: #fff;
+		}
+
+		&--active {
+			background: $maincolor1;
+			color: #fff;
+
+			&:hover {
+				background: $maincolor1;
+			}
+		}
+	}
+
+	@media (max-width: 767px) {
+		display: none;
+	}
+}
+
+.account-nav-mobile {
+	display: none;
+	width: 100%;
+	margin-bottom: 15px;
+	max-width: 320px;
+	margin: 0 auto 15px auto;
+	font-size: 12px;
+	padding: 12px 16px;
+	border: 1px solid #d8dce9;
+	border-radius: 4px;
+	color: $textcolor3;
+	appearance: none;
+	background: url("../img/select_arrow_down.svg") no-repeat right;
+	background-position-x: calc(100% - 16px);
+
+	@media (max-width: 767px) {
+		display: block;
+	}
+}
+
+/* Panel info */
+.panel-info {
+	background-color: #fff;
+	border-radius: 8px;
+	padding: 30px;
+	margin-bottom: 45px;
+	box-shadow: 0px 5px 10px rgba(186, 192, 209, 0.2);
+
+	&__title {
+		font-size: 24px;
+		margin-bottom: 25px;
+	}
+
+	@media (max-width: 991px) {
+		&__title {
+			font-size: 18px;
+		}
+	}
+
+	@media (max-width: 767px) {
+		padding: 16px;
+
+		&__title {
+			font-size: 16px;
+			margin-bottom: 13px;
+		}
+	}
+}
+
+.panel-info-nav-wrap {
+	position: relative;
+	margin-bottom: 30px;
+
+	@media (max-width: 991px) {
+		margin-bottom: 16px;
+	}
+
+	@media (max-width: 767px) {
+		height: 30px;
+		overflow-x: auto;
+		padding: 0 0 10px 0;
+	}
+}
+
+.panel-info-nav {
+	display: inline-block;
+	border-bottom: 1px solid #eff1f6;
+
+	&__link {
+		display: inline-block;
+		color: $maincolor1;
+		transition: 0.3s ease;
+		font-size: 14px;
+
+		&:not(:last-child) {
+			margin-right: 40px;
+		}
+
+		&:hover,
+		&:focus {
+			color: $maincolor2;
+		}
+
+		&--active {
+			color: $maincolor2;
+			border-bottom: 2px solid $maincolor2;
+
+			&:hover,
+			&:focus {
+				color: $maincolor2;
+			}
+		}
+	}
+
+	@media (max-width: 767px) {
+		display: flex;
+		position: absolute;
+		top: 0;
+		left: 0;
+
+		&__link {
+			font-size: 12px;
+			white-space: nowrap;
+
+			&:not(:last-child) {
+				margin-right: 10px;
+			}
+		}
+	}
+}
+
+/* Tariffs */
+.tariffs__card {
+	margin-bottom: 16px;
+}
+.tariff-card {
+	&__inner {
+		background-color: $maincolor4;
+		height: 100%;
+	}
+
+	&__header {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		color: #fff;
+		flex-wrap: wrap;
+		font-size: 18px;
+		font-weight: 600;
+		line-height: 1.2;
+		min-height: 56px;
+		padding: 0 24px;
+		border-radius: 8px 8px 0px 0px;
+		background: $gradient1;
+
+		&--v2 {
+			background: $gradient2;
+		}
+
+		&--v3 {
+			background: $gradient3;
+		}
+	}
+
+	&__body {
+		padding: 24px;
+	}
+
+	&__description {
+		line-height: 1.43;
+
+		.text-pink {
+			color: $maincolor2;
+		}
+	}
+
+	@media (max-width: 991px) {
+		&__header {
+			font-size: 16px;
+		}
+
+		&__body {
+			font-size: 12px;
+			padding: 16px;
+		}
+	}
+}
+
+.tariff-card-table {
+	width: 100%;
+
+	td,
+	th {
+		padding: 12px 0;
+	}
+
+	th {
+		font-size: 12px;
+		font-weight: normal;
+		text-transform: uppercase;
+	}
+
+	tr {
+		border-bottom: 1px solid #ebebeb;
+	}
+
+	.price {
+		font-family: $font2;
+	}
+}
+
+/* Additional services */
+.additional-services {
+	&__title {
+		font-size: 24px;
+		margin-bottom: 16px;
+	}
+
+	&__description {
+		margin-bottom: 20px;
+	}
+
+	@media (max-width: 991px) {
+		&__title {
+			font-size: 18px;
+		}
+
+		&__description {
+			font-size: 12px;
+		}
+	}
+
+	@media (max-width: 767px) {
+		&__title {
+			font-size: 16px;
+			margin-bottom: 8px;
+		}
+	}
+}
+
+.additional-service {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	background: #ffffff;
+	box-shadow: 0px 10px 50px rgba(24, 34, 70, 0.1);
+	border-radius: 8px;
+	
+	&:not(:last-child) {
+		margin-bottom: 24px;
+	}
+
+	&__img {
+		display: flex;
+		flex-shrink: 0;
+		width: 305px;
+		border-radius: 8px 0 0 8px;
+		overflow: hidden;
+
+		img {
+			display: block;
+			height: 100%;
+			object-fit: cover;
+		}
+	}
+
+	&__info {
+		display: flex;
+		flex-shrink: 1;
+		flex-direction: column;
+		padding: 30px 15px 30px 30px;
+	}
+
+	&__title {
+		font-size: 20px;
+		font-weight: 600;
+		line-height: 1.2;
+		margin-bottom: 15px;
+	}
+
+	&__profit {
+		display: flex;
+		align-items: center;
+		background-color: $maincolor4;
+		border-radius: 8px;
+		margin-top: auto;
+		padding: 15px 20px;
+		line-height: 1.2;
+	}
+
+	&__profit-icon {
+		margin-right: 12px;
+	}
+
+	&__right {
+		display: flex;
+		padding: 0 15px;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+
+	&__old-price {
+		font-size: 24px;
+		font-weight: 600;
+		color: $maincolor1;
+		margin-bottom: 10px;
+		text-decoration: line-through;
+		line-height: 1;
+	}
+
+	&__price {
+		font-size: 24px;
+		font-weight: 600;
+		margin-bottom: 10px;
+		line-height: 1.2;
+	}
+
+	&__time {
+		margin-bottom: 20px;
+	}
+
+	&__order-btn,
+	&__more-btn {
+		width: 100%;
+		padding: 10px 12px 7px;
+	}
+
+	&__more-btn {
+		white-space: nowrap;
+	}
+
+	.btn + .btn {
+		margin-top: 10px;
+	}
+
+	@media (max-width: 1200px) {
+		&__img {
+			width: 25%;
+		}
+	}
+
+	@media (max-width: 991px) {
+		flex-wrap: wrap;
+
+		&__img {
+			width: 100%;
+			max-height: 320px;
+			border-radius: 8px 8px 0 0;
+
+			img {
+				width: 100%;
+			}
+		}
+
+		&__info {
+			padding: 16px;
+		}
+
+		&__des {
+			font-size: 12px;
+		}
+
+		&__profit {
+			font-size: 12px;
+		}
+
+		&__right {
+			width: 100%;
+			flex-direction: row;
+			justify-content: space-between;
+			align-items: center;
+			padding: 24px 16px;
+		}
+
+		&__old-price {
+			margin: 0;
+		}
+
+		&__price {
+			margin: 0 0 0 24px;
+		}
+
+		&__time {
+			margin: 0 0 0 24px;
+		}
+
+		&__order-btn,
+		&__more-btn {
+			max-width: 160px;
+		}
+
+		&__order-btn {
+			margin-left: auto;
+		}
+
+		.btn + .btn {
+			margin-top: 0;
+		}
+
+		&__more-btn {
+			margin-left: 15px;
+		}
+	}
+
+	@media (max-width: 767px) {
+		&__title {
+			font-size: 16px;
+			line-height: 1.5;
+			margin-bottom: 4px;
+		}
+
+		&__profit {
+			padding: 8px;
+		}
+
+		&__profit-icon {
+			align-self: baseline;
+			margin-top: 5px;
+		}
+
+		&__right {
+			flex-direction: column;
+			justify-content: center;
+			padding: 24px 16px;
+		}
+
+		&__old-price,
+		&__price {
+			font-size: 18px;
+		}
+
+		&__price {
+			margin: 10px 0 0 0;
+		}
+
+		&__time {
+			margin: 10px 0 0 0;
+		}
+
+		&__order-btn,
+		&__more-btn {
+			max-width: 100%;
+		}
+
+		&__order-btn {
+			margin: 10px 0 0 0;
+		}
+
+		.btn + .btn {
+			margin: 10px 0 0 0;
+		}
+
+		&__more-btn {
+			margin: 10px 0 0 0;
+		}
+	}
+
+	@media (max-width: 480px) {
+		&__img {
+			width: 100%;
+			max-height: 190px;
+
+			img {
+				width: 100%;
+			}
+		}
+	}
+}

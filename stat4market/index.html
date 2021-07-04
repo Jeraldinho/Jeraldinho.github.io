@@ -1,1 +1,417 @@
+<!DOCTYPE html>
+<html lang="ru">
 
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Stat4market</title>
+
+	<!-- Icones -->
+	<link href="favicon.ico" rel="icon">
+
+	<!-- Styles -->
+	<link href="css/bootstrap-reboot.min.css" rel="stylesheet">
+	<link href="css/bootstrap-grid.min.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+	<header class="header">
+		<div class="container header__wrapper">
+			<div class="logo">
+				<img src="img/logo_icon.svg" width="32" alt="Logo icon">
+				<img src="img/stat4market.svg" class="logo__text" alt="Stat4market">
+			</div>
+
+			<div class="shop-select">
+				<img src="img/ozon_logo.svg" class="shop-select__logo" width="16" alt="Ozon logo">
+				<span class="shop-select__selected"><span class="shop-select__name">Ozon</span> (№28451)</span>
+			</div>
+
+			<div class="header__right">
+				<div class="balance">
+					<img src="img/icon_coin.svg" class="balance__coin-icon" width="16" alt="Coin icon">
+
+					<div class="balance__amount">
+						<span>9 932.00</span>
+						<img src="img/ruble_icon.svg" width="11" alt="Rouble icon">
+					</div>
+
+					<span class="balance__enough-for">(Хватит ~ 345 дней)</span>
+					<button class="btn balance__btn">Пополнить</button>
+				</div>
+
+				<div class="header__notifications notifications">
+					<img src="img/bell.svg" width="44" height="44" alt="Notification icon">
+					<div class="notifications__count">
+						11
+					</div>
+				</div>
+
+				<div class="header__user user-account">
+					<img src="img/icon_user.svg" class="user-account__avatar" alt="User avatar">
+
+					<div class="user-account__name">
+						Александр
+						<img src="img/arrow_down.svg" alt="Arrow down icon">
+					</div>
+
+					<ul class="user-account__dropdown-menu dropdown-menu">
+							<li><a href="/logout">Выйти</a></li>
+					</ul>
+				</div>
+
+				<button class="header__burger-menu">
+					<span></span>
+				</button>
+			</div>
+
+			<nav class="header-nav">
+				<ul>
+					<li><a href="/about" class="header-nav__link">О компании</a></li>
+					<li><a href="/price" class="header-nav__link">Цены</a></li>
+					<li><a href="/contacts" class="header-nav__link">Контакты</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+	<main class="page-content">
+		<div class="container">
+			<h1 class="page-title">Личный кабинет</h1>
+
+			<nav class="account-nav">
+				<a href="/settings" class="account-nav__link btn">Настройки</a>
+				<a href="/payment" class="account-nav__link btn account-nav__link--active">Оплата</a>
+				<a href="/notifications" class="account-nav__link btn">Уведомления</a>
+				<a href="/affiliate_program" class="account-nav__link btn">Партнёрская программа</a>
+				<a href="/edуcation" class="account-nav__link btn">Обучение</a>
+			</nav>
+
+			<select class="account-nav-mobile">
+				<option value="">Настройки</option>
+				<option value="">Оплата</option>
+				<option value="">Уведомления</option>
+				<option value="">Партнёрская программа</option>
+				<option value="">Обучение</option>
+			</select>
+
+			<!-- Panel info -->
+			<div class="panel-info">
+				<h2 class="panel-info__title">Оплата</h2>
+
+				<div class="panel-info-nav-wrap">
+					<nav class="panel-info-nav">
+						<a href="/replenish_balance" class="panel-info-nav__link">Пополнение баланса</a>
+						<a href="/replenish_balance" class="panel-info-nav__link">Детализация расходов</a>
+						<a href="/replenish_balance"
+							class="panel-info-nav__link panel-info-nav__link--active">Тарифы, доп. услуги</a>
+						<a href="/replenish_balance" class="panel-info-nav__link">История платежей</a>
+					</nav>
+				</div>
+
+				<!-- Tarrifs -->
+				<div class="tariffs row">
+					<div class="col-12 col-sm-12 col-md-6 col-lg-4 tariffs__card tariff-card">
+						<div class="tariff-card__inner">
+							<div class="tariff-card__header">
+								Wildberries — Аналитика
+							</div>
+
+							<div class="tariff-card__body">
+								<div class="tariff-card__description">
+									<p>
+										Анализ заказов, продаж, остатков, товарная аналитика по каждому складу
+										маркетплейса
+									</p>
+								</div>
+
+								<table class="tariff-card-table">
+									<thead>
+										<tr>
+											<th width="222">Количество товаров</th>
+											<th width="90">Месяц</th>
+											<th width="90">День</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>до 50</td>
+											<td class="price">2 370₽</td>
+											<td class="price">79₽</td>
+										</tr>
+
+										<tr>
+											<td>от 51 до 100</td>
+											<td class="price">2 970₽</td>
+											<td class="price">99₽</td>
+										</tr>
+
+										<tr>
+											<td>от 101 до 500</td>
+											<td class="price">4 470₽</td>
+											<td class="price">149₽</td>
+										</tr>
+
+										<tr>
+											<td>от 501 до 1000</td>
+											<td class="price">7 470₽</td>
+											<td class="price">249₽</td>
+										</tr>
+
+										<tr>
+											<td>от 1001 до 5000</td>
+											<td class="price">10 470₽</td>
+											<td class="price">349₽</td>
+										</tr>
+
+										<tr>
+											<td>Безлимитный от 5001</td>
+											<td class="price">14 970₽</td>
+											<td class="price">499₽</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-12 col-sm-12 col-md-6 col-lg-4 tariffs__card tariff-card">
+						<div class="tariff-card__inner">
+							<div class="tariff-card__header tariff-card__header--v2">
+								Wildberries — Анализ категорий
+							</div>
+
+							<div class="tariff-card__body">
+								<div class="tariff-card__description">
+									<p>
+										Анализ любых категорий, страниц брендов, поисковых запросов, акций. Безлимитный
+										доступ к данным по всем товарам со страницы, заказам, остатках на складах,
+										скорости заказов и другим метрикам.
+									</p>
+
+									<p class="text-pink">Добавление страницы в отслеживание — 99₽/страница</p>
+
+									<p>Списывается за уникальную страницу, если вдруг удалили страницу и добавили
+										заново — повторно оплата не снимается</p>
+
+									<p>
+										<b>Ежедневный мониторинг и обновление страниц:</b>
+									</p>
+								</div>
+
+								<table class="tariff-card-table">
+									<thead>
+										<tr>
+											<th width="222">Количество страниц</th>
+											<th width="90">Месяц</th>
+											<th width="90">День</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>до 3</td>
+											<td class="price">0₽</td>
+											<td class="price">0₽</td>
+										</tr>
+
+										<tr>
+											<td>от 4 до 10</td>
+											<td class="price">0₽</td>
+											<td class="price">0₽</td>
+										</tr>
+
+										<tr>
+											<td>от 11 до 20</td>
+											<td class="price">0₽</td>
+											<td class="price">0₽</td>
+										</tr>
+
+										<tr>
+											<td>от 21 до 50</td>
+											<td class="price">0₽</td>
+											<td class="price">0₽</td>
+										</tr>
+
+										<tr>
+											<td>Безлимитный от 51</td>
+											<td class="price">0₽</td>
+											<td class="price">0₽</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-12 col-sm-12 col-md-12 col-lg-4 tariffs__card tariff-card">
+						<div class="tariff-card__inner">
+							<div class="tariff-card__header tariff-card__header--v3">
+								Wildberries — Позиции товаров
+							</div>
+
+							<div class="tariff-card__body">
+								<div class="tariff-card__description">
+									<p>
+										Анализ позиций любых товаров на страницах категорий, бренда, поисковых запросов,
+										акций.
+									</p>
+
+									<p class="text-pink">Добавление нового товара — 29₽/товар</p>
+
+									<p>Списывается за уникальный товар, если вдруг удалили товар и добавили заново -
+										повторно оплата не списывается.</p>
+
+									<p>
+										<b>Ежедневный мониторинг позиций:</b>
+									</p>
+								</div>
+
+								<table class="tariff-card-table">
+									<thead>
+										<tr>
+											<th width="222">Количество товаров</th>
+											<th width="90">Месяц</th>
+											<th width="90">День</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>до 20</td>
+											<td class="price">870₽</td>
+											<td class="price">29₽</td>
+										</tr>
+
+										<tr>
+											<td>от 21 до 100</td>
+											<td class="price">1470₽</td>
+											<td class="price">49₽</td>
+										</tr>
+
+										<tr>
+											<td>от 101 до 500</td>
+											<td class="price">2970₽</td>
+											<td class="price">99₽</td>
+										</tr>
+
+										<tr>
+											<td>от 501 до 1000</td>
+											<td class="price">4470₽</td>
+											<td class="price">149₽</td>
+										</tr>
+
+										<tr>
+											<td>от 1001 до 5000 </td>
+											<td class="price">7470₽</td>
+											<td class="price">249₽</td>
+										</tr>
+
+										<tr>
+											<td>Безлимитный от 5001</td>
+											<td class="price">8970₽</td>
+											<td class="price">299₽</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- END Tarrifs -->
+			</div>
+			<!-- END Panel info -->
+
+			<!-- Additional services -->
+			<div class="additional-services">
+				<h2 class="additional-services__title">
+					Дополнительные услуги:
+				</h2>
+
+				<div class="additional-services__description">
+					Помощь от команды Stat4market, основателя сервиса и партнеров, для увеличения продаж и помощи по
+					работе с маркетплейсом.
+				</div>
+
+				<div class="additional-services-list">
+					<div class="additional-service">
+						<div class="additional-service__img">
+							<img src="img/services/1.jpg" alt="Оптимизация продаж на маркетплейсе">
+						</div>
+
+						<div class="additional-service__info">
+							<div class="additional-service__title">
+								Оптимизация продаж на маркетплейсе
+							</div>
+
+							<div class="additional-service__des">
+								<p>
+									Наш основной продукт для тех, кто уже продаёт на Wildberries, направленный напрямую
+									на увеличение вашей прибыли от работы с маркетплейсом. В нашем сервисе уже несколько
+									сотен поставщиков и мы понимаем основные ошибки поставщиков, которые тормозят
+									их рост и рычаги увеличения ваших продаж на маркетплейсах. Наша команда и основатель
+									сервиса Дмитрий Бакланов проанализирует ваш бренд, найдут точки роста, оптимизации
+									товаров.
+								</p>
+
+								<p>Для начала работы необходимо заполнить заявку по ссылке «Заказать».</p>
+							</div>
+							
+							<div class="additional-service__profit">
+								<img src="img/check_in_circle.svg" class="additional-service__profit-icon" width="24" alt="Check icon">
+								Вы получите полное понимание своих дальнейших действий для развития бренда,
+								также чек-лист из более 30 пунктов по улучшениям или проблемам именно вашего бренда
+								для оптимизации, увеличения выручки и прибыли
+							</div>
+						</div>
+
+						<div class="additional-service__right">
+							<div class="additional-service__old-price">29 900₽</div>
+							<div class="additional-service__price">24 900₽</div>
+							<div class="additional-service__time">2 часа</div>
+
+							<button class="additional-service__order-btn btn">Заказать</button>
+							<button class="additional-service__more-btn btn btn--outline">Подробнее об услуге</button>
+						</div>
+					</div>
+
+					<div class="additional-service">
+						<div class="additional-service__img">
+							<img src="img/services/2.jpg" alt="Помощь в выходе на маркетплейс">
+						</div>
+
+						<div class="additional-service__info">
+							<div class="additional-service__title">
+								Помощь в выходе на маркетплейс
+							</div>
+
+							<div class="additional-service__des">
+								<p>
+									Продукт для тех кто только собирается выйти на Wildberries. Состоит из пошагового плана со всеми этапами выхода на маркетплейс до первой поставки а также 2-х часовая консультация с экспертом, ответы на все вопросы. Необходимо предварительно заполнить заявку по ссылке «Заказать».
+								</p>
+							</div>
+							
+							<div class="additional-service__profit">
+								<img src="img/check_in_circle.svg" class="additional-service__profit-icon" width="24" alt="Check icon">
+								Вы получите ответы на все вопросы, которые мешают выйти и поставить ваши товары на Wildberries.
+							</div>
+						</div>
+
+						<div class="additional-service__right">
+							<div class="additional-service__old-price">9 900₽</div>
+							<div class="additional-service__price">4 900₽</div>
+							<div class="additional-service__time">2 часа</div>
+
+							<button class="additional-service__order-btn btn">Заказать</button>
+							<button class="additional-service__more-btn btn btn--outline">Подробнее об услуге</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- END Additional services -->
+		</div>
+	</main>
+
+	<script src="js/main.js"></script>
+</body>
+
+</html>
