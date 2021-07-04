@@ -390,6 +390,18 @@ img {
   text-transform: uppercase;
 }
 
+.tariff-card-table th.count {
+  width: 222px;
+}
+
+.tariff-card-table th.month {
+  width: 90px;
+}
+
+.tariff-card-table th.day {
+  width: 90px;
+}
+
 .tariff-card-table tr {
   border-bottom: 1px solid #ebebeb;
 }

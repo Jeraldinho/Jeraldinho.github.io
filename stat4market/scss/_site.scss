@@ -312,6 +312,18 @@ img {
 		font-size: 12px;
 		font-weight: normal;
 		text-transform: uppercase;
+
+		&.count {
+			width: 222px;
+		}
+
+		&.month {
+			width: 90px;
+		}
+
+		&.day {
+			width: 90px;
+		}
 	}
 
 	tr {
