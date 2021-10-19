@@ -1,0 +1,142 @@
+// Fonts
+$font1: Arial, Tahoma, Helvetica, sans-serif;
+
+// Colors
+$maincolor1: #AF4425;
+$maincolor2: #662E1C;
+$maincolor3: #EBDCB2;
+$maincolor4: #C9A66B;
+$gray: #808080;
+$slateGray: #708090;
+$darkSlateGray: #2F4F4F;
+$textColor: #000000;
+
+* {
+	font-family: $font1;
+	
+}
+
+html,
+body {
+	height: 100%;
+	font-family: $font1;
+	font-size: 14px;
+	color: #000000;
+	background-color: #ffffff;
+}
+
+a:hover,
+a:focus {
+	text-decoration: none;
+}
+
+img {
+	max-width: 100%;
+}
+
+.page {
+	display: flex;
+	height: 100%;
+	flex-direction: column;
+}
+
+/* Header */
+.header {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 50px;
+	background-color: $maincolor1;
+	color: #ffffff;
+	padding: 0 10px;
+
+	&__title {
+		line-height: 1;
+	}
+}
+/* END Header */
+
+/* Content */
+.content {
+	display: flex;
+	flex-grow: 1;
+	overflow-y: hidden;
+}
+/* END Content */
+
+/* Sidebar */
+.sidebar {
+	display: flex;
+	flex-direction: column;
+	flex-shrink: 0;
+	width: 200px;
+	background-color: $maincolor3;
+	padding: 15px 0;
+	overflow-y: auto;
+
+	&__title {
+		font-size: 18px;
+		font-weight: bold;
+		margin-bottom: 10px;
+		padding: 0 10px;
+	}
+}
+.users-list {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+
+	&__item-link {
+		display: block;
+		color: $textColor;
+		font-size: 14px;
+		transition: 0.3s;
+		line-height: 1;
+		padding: 10px 10px;
+
+		&:hover,
+		&:focus {
+			background-color: $darkSlateGray;
+			color: #ffffff;
+		}
+	}
+}
+.users-list__item--active {
+	.users-list__item-link {
+		background-color: $darkSlateGray;
+		color: #ffffff;
+	}
+}
+/* END Sidebar */
+
+/* Messages */
+.messages-cnt {
+	padding: 20px;
+	overflow-y: auto;
+}
+
+.message {
+	display: inline-block;
+    min-width: 30%;
+    color: inherit;
+    padding: 15px;
+    font-size: 14px;
+    background: #f7f7f7;
+    border-radius: 5px;
+    box-shadow: 3px 3px 5px rgba(34, 39, 51, 0.1);
+
+	&:not(:last-child) {
+		margin-bottom: 30px;
+	}
+}
+/* END Messages */
+
+/* Footer */
+.footer {
+	min-height: 100px;
+	background-color: $maincolor2;
+	color: #ffffff;
+	padding: 20px;
+	text-align: center;
+}
+/* END Footer */
